@@ -197,7 +197,7 @@ section{
     align-items: center;
 }
 .div1{
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     width: 200px;
     height: 200px;
     margin: 40px;
@@ -216,19 +216,52 @@ section{
     overflow: hidden;
 }
  .div3{
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     width: 200px;
     height: 200px;
     position: relative;
     margin: 40px;
-    border-radius: 20px;
     overflow: hidden;
+    display: flex;
+    flex-direction: row;
+
 }
 .down .div2 img{
     width: 200px;
     height: 200px;
 }
-.div1 .img1 img{
-    width: 200px;
+.img1 img{
+    width: 160px;
     height: 100px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.col{
+    width: 160px;
+    height: 100px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #FBE94B;
+}
+/* line in between div 2 and 3 */
+.line{
+    margin-left: 0;
+    margin-right: 0;
+    position: absolute;
+    width: 172px;
+    height: 3px;
+    border: 1px solid #FB0808;
+    transform: rotate(-90deg);
+    color: #FB0808;
+    display: flex;
+    flex-direction: row;
+}
+.div3{
+    display: flex;
+    flex-direction: row;
+}
+.div3 h2, .div3 h3, .div3 h4{
+    flex-direction: column;
 }
