@@ -8,7 +8,7 @@ body{
 }
 section{
     margin: 45px 80px 80px 80px;
-    height: 700px;
+    height: 900px;
     background-color: white;
     position: relative;
     display: flex;
@@ -23,6 +23,9 @@ section{
     top: -4vh;
     position: absolute;
     z-index: 1;
+}
+.circle:hover{
+    background-color: #FB0808;
 }
 .lost-circle{
     background-color: chartreuse;
@@ -57,6 +60,9 @@ section{
     align-items: center;
 
 }
+.nav ul li a:hover{
+    color: #FB0808;
+}
 .btn{
     background-color: #02006D;
     border-radius: 11px 11px 0px 11px;
@@ -67,11 +73,16 @@ section{
     align-items: center;
     justify-content: center;
 }
+.btn:hover{
+    color: #02006D;
+    background-color: #ffffff;
+    border: 1px solid #02006D;
+}
 .nav ul .btn a{
     color: white;
 }
 .row1{
-    background-color: violet;
+    /* background-color: violet; */
     height: 350px;
     width: 500px;
     margin-top: 15vh !important;
@@ -109,6 +120,11 @@ section{
     text-decoration: none;
     
     }
+.btn2:hover{
+    background-color: #ffffff;
+    color: #FB0808;
+    border: 1px solid #FB0808;
+}
 .circle2{
     background-color: rgb(255, 0, 0);
     width: 30px;
@@ -118,8 +134,11 @@ section{
     position: relative;
     top: 3vh;
 }
+.circle2:hover{
+    background-color: chartreuse;
+}
 .row2{
-    background-color: yellow;
+    /* background-color: yellow; */
     height: 350px;
     width: 500px;
     margin-top: 10vh !important;
@@ -128,31 +147,31 @@ section{
 }
 .circle-big{
     border-radius: 50%;
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 90px;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     background-color: rgb(255, 238, 0);
     position: relative;
-    top: 15vh;
-    left: 14vh;
+    top: 13vh;
+    left: 30vh;
     z-index: 1;
 }
 .circle-disp{
     border-radius: 50%;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     background-color: rgb(0, 4, 255);
     position: relative;
-    top: 40vh;
+    top: 45vh;
     position: absolute;
-    left: 14vh;
+    left: 30vh;
     z-index: 1;
 }
 .circle-big img {
@@ -187,9 +206,9 @@ section{
 /* 3div bottom section */
 .down{
     position: absolute;
-    background-color: yellow;
+    /* background-color: yellow; */
     width: 100%;
-    height: 40vh;
+    height: 60vh;
     bottom: 0;
     display: flex;
     flex-direction: row;
@@ -246,22 +265,40 @@ section{
     background-color: #FBE94B;
 }
 /* line in between div 2 and 3 */
-.line{
-    margin-left: 0;
-    margin-right: 0;
-    position: absolute;
-    width: 172px;
-    height: 3px;
-    border: 1px solid #FB0808;
-    transform: rotate(-90deg);
-    color: #FB0808;
-    display: flex;
-    flex-direction: row;
-}
 .div3{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    border-left: 5px solid red;
+    
 }
 .div3 h2, .div3 h3, .div3 h4{
     flex-direction: column;
+    margin-left: 20px;
+}
+.div3 h3{
+    font-weight: 400;
+    font-size: 30px;
+}
+.div3 h2{
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 15px;
+}
+.div3 h4{
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 25px;
+}
+.inside-circle{
+    position: absolute;
+    background-color: #18F218;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    right: 0vh;
+    bottom: 2vh;
+    z-index: 1;
+}
+.inside-circle:hover{
+    background-color: #FB0808;
 }
